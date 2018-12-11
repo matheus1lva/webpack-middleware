@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+.DS_Store
+npm-debug.log
+coverage
+node_modules
+.eslintcache
+
+.nyc_output
+coverage.lcov
+
+dist
