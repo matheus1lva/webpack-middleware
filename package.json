@@ -35,14 +35,13 @@
     "ava": "^1.0.0-beta.8",
     "eslint": "^5.6.1",
     "eslint-config-shellscape": "^2.0.2",
+    "express": "^4.16.4",
     "lint-staged": "^7.3.0",
-    "markdown-toc": "^1.2.0",
     "nyc": "^13.0.1",
     "pre-commit": "^1.2.2",
     "prettier": "^1.14.3"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "pre-commit": "lint-staged",
   "lint-staged": {
     "*.js": [
