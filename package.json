@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "joi": "^14.0.3"
+    "joi": "^14.0.3",
+    "mime": "^2.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
