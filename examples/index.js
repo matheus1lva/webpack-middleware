@@ -1,17 +1,19 @@
+const path = require('path');
+
 const express = require('express');
+const webpack = require('webpack');
+
+const middleware = require('../lib/index');
+
+const config = require('./webpack.config');
 
 const app = express();
+const compiler = webpack(config);
 
-app.use((req, res, next) => {
-  const publicPath = '/static/';
-  if (req.originalUrl.includes(publicPath)) {
-    console.log(req.originalUrl.replace(publicPath, ''));
-  }
-  next();
-});
+app.use(middleware(compiler));
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './index.html'));
 });
 
 app.listen(3000, () => {
