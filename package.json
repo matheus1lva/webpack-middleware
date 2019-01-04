@@ -26,10 +26,12 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
+    "get-port": "^4.1.0",
     "joi": "^14.0.3",
     "loglevelnext": "^3.0.0",
     "mime": "^2.4.0",
-    "webpack-stylish": "^0.1.8"
+    "webpack-stylish": "^0.1.8",
+    "ws": "^6.1.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
