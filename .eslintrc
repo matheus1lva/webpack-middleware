@@ -4,5 +4,8 @@
     "document": true,
     "WebSocket": true,
     "window": true
+  },
+  "rules": {
+    "no-console": "off"
   }
 }

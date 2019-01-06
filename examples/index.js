@@ -4,6 +4,7 @@ const express = require('express');
 const webpack = require('webpack');
 
 const middleware = require('../lib/index');
+// const middleware = require('webpack-dev-middleware');
 
 const config = require('./webpack.config');
 
