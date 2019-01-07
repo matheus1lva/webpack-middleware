@@ -3,7 +3,8 @@
   "globals": {
     "document": true,
     "WebSocket": true,
-    "window": true
+    "window": true,
+    "__WS_PORT__": true
   },
   "rules": {
     "no-console": "off"

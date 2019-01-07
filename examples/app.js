@@ -1,2 +1,9 @@
-const main = document.querySelector('main');
-main.innerHTML = 'ma2in';
+require('./component');
+
+if (module.hot) {
+  module.hot.accept((err) => {
+    if (err) {
+      console.error('HMR', err);
+    }
+  });
+}
