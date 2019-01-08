@@ -4,7 +4,8 @@
     "document": true,
     "WebSocket": true,
     "window": true,
-    "__WS_PORT__": true
+    "__WS_PORT__": true,
+    "__webpack_hash__": true
   },
   "rules": {
     "no-console": "off"
