@@ -11,7 +11,6 @@
     "ci:test": "npm run test -- --verbose",
     "commitlint": "commitlint",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "faq:toc": "markdown-toc -i .github/FAQ.md",
     "lint": "eslint --fix --cache lib test",
     "lint-staged": "lint-staged",
     "security": "npm audit",
@@ -27,7 +26,12 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "joi": "^14.0.3"
+    "get-port": "^4.1.0",
+    "joi": "^14.0.3",
+    "loglevelnext": "^3.0.0",
+    "mime": "^2.4.0",
+    "webpack-stylish": "^0.1.8",
+    "ws": "^6.1.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
@@ -35,14 +39,14 @@
     "ava": "^1.0.0-beta.8",
     "eslint": "^5.6.1",
     "eslint-config-shellscape": "^2.0.2",
+    "express": "^4.16.4",
     "lint-staged": "^7.3.0",
-    "markdown-toc": "^1.2.0",
     "nyc": "^13.0.1",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.14.3"
+    "prettier": "^1.14.3",
+    "webpack": "^4.28.3"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "pre-commit": "lint-staged",
   "lint-staged": {
     "*.js": [
@@ -55,7 +59,6 @@
       "lib/*.js"
     ],
     "exclude": [
-      "lib/client*.js",
       "test/"
     ]
   }
